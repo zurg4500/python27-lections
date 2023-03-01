@@ -86,7 +86,7 @@
 # тоже принимает функцию и итерирумемый объект.
 # возвращает один результат
 
-from functools import reduce
+#from functools import reduce
 
 # list1 = [2,3,4,5,67,123,8]
 
@@ -107,3 +107,36 @@ from functools import reduce
 # president
 # print(reduce(lambda x, y: x if len(x)> len(y) else y, list1)) # president
 
+
+# Посчитать количество выкупа отданного пиратам и вывести в терминал сооветсвующий результат
+# redemption= (int(input())) # redemption - Выкуп\выплата
+# gold_t = 1
+# silver_t = 2
+# if redemption == gold_t or redemption == silver_t:
+#    print('Лорда выпороли и отпустили без одежды')
+# elif redemption > gold_t and redemption > silver_t:
+#    print('Лорда просто отпустили')
+# else:
+#    print('Пленный лорд был казнен пиратами')
+# print(redemption)
+
+
+# a = int(input())
+# b = 10
+
+# if a > b:
+#     print("Ваше число больше 10!")
+# elif a == b:
+#     print("Ваше число равно 10")
+# else:
+#     print("Ваше число меньше 10")
+#for x in a:
+#    b.append(int(x))
+#print(b)
+
+
+list_ = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] 
+
+list2 = list(filter(lambda x: x%2==0, list_))
+list3 = list(filter(lambda x: x%2!=0, list_))
+print(list3)

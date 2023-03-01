@@ -160,6 +160,21 @@
 # list3 = {**dict1}
 # print(list3) # {'a': 1, 'b': 2}
 
-num = 6
 
+#str1 = 'scy'
+#str2 = 'net'
+#print(str1+str2)
+ # scynet - результат операции
+
+# метод - .upper
+# str1 = 'bot'
+# print(str1.upper()) 
+# BOT - результат операции
+
+#'hello world'.split('o') # ['hell', ' w', 'rld']
+#'hello world'.split() # ['hello', 'world']
+
+str1 = 'goodbye lake Issyk-kyl'
+print(str1.split('y')) 
+# ['goodb', 'e lake Iss', 'k-k', 'l']
 

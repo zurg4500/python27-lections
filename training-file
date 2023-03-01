@@ -1,0 +1,131 @@
+# a = ['bob', 'razor', 'huindai', 'prey', 'rob22', 'stark123']
+# x = [y + 'PYTHON' 
+#     if len(y) >=5 
+#     else y + 'python' 
+#     for y in a 
+#    if y.isalpha()]
+# print(x)
+
+# ['bobpython', 'razorPYTHON', 'huindaiPYTHON', 'preypython', 'rob22PYTHON', 'stark123PYTHON']
+
+# x = []
+# for y in a:
+#    if y.isalpha():
+#        if len(y) >=5:
+#            c = y + 'PYTHON'
+#            x.append(c)
+#        else:
+#            c = y + 'python'
+#            x.append(c)
+# print(x)
+
+# Vlad = {'name': 'Vlad', 'age': 36}
+# Radomir = {'name': 'Radomir', 'age': 25}
+# Chang = {'name': 'Chang', 'age': 17}
+
+# noobs = [Vlad, Radomir, Chang]
+
+# ages = [player.get('age', None) for player in noobs]
+# print(ages)
+
+# older = 0
+# yanger = 0
+# count = 0
+
+# for x in ages:
+#    if x <=17:
+#        older += 1
+#    else:
+#       yanger += 1
+#    count += 1
+# older = older * (100/count)
+# yanger = yanger * (100/count)
+
+# print(f'Процент нубов с возрастом меньше 17: {round(older)} процента')
+# print(f'Процент нубов с возрастом больше 17: {round(yanger)} процента')
+
+# matrix = [
+#   [0, 1, 14, 19],
+#    [8, 90, 12, 1],
+#    [8, 88, 34, 10]
+#]
+
+# ucpress = [n for row in matrix for n in row]
+# print(ucpress)
+
+# ucpress = []
+# for row in matrix:
+#    for n in row:
+#        ucpress.append(n)
+# print(ucpress)
+
+# str_list = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+# int_list = [int(x) for x in str_list if x.isdigit()]
+# print(int_list)
+
+#list_ = [1, 4 ,6 ,7, 10]
+#list_2 = [if x%2==0 in list_ x**2]
+#print(list_2)
+#list_2 = []
+#for x in list_:
+#    if x%2==0 ** 2:
+#        list_2.append(x)
+#    else:
+#        list_2.append(x)
+#print(list_2)
+
+# Обработка исключений
+
+#try:
+#    some code 1
+#except:
+#    some code 2
+#else:
+#    some code 3
+#finally:
+#    some code 4
+
+# try:
+#     n1 = int(input('Введите число: '))
+# except:
+#    print('Вы ввели не число: ')
+
+# try:
+#     n1 = int(input('Введите первой число: '))
+#     n2 = int(input('Введите второе число '))
+#     resultN = n1 / n2
+# except:
+#     print('Вы ввели не число')
+# else:
+#     print(resultN)
+# finally:
+#     print('Программа завершена')
+
+# dict1 = dict.fromkeys(('scynet', 'bot', 'cheat', 'comp'), 0)
+# dict1 = {k: len(k) for k, v in dict1.items()}
+# dict1.update({'except': 'Exception'})
+# print(dict1)
+# 
+# while True:
+#     key = input(' Введите слово: ')
+#     dict1[key] += 2
+# try:
+#     age = int(input())
+#     if age < 18:
+#         raise ValueError()
+#     else:
+#         print("Спасибо")
+#     if age == str:
+#         raise ValueError()
+# except AttributeError:
+#     print("Введён некорректный возраст")
+# except ValueError:
+#     print("Доступ запрещён")
+# finally:
+#     print("До свидания!")    
+
+
+
+
+
+
