@@ -47,7 +47,7 @@ print(A()) # Hello
 class A:
     def __init__(self, number):
         self.number = number
-    #def __eq__(self, other):
+    def __eq__(self, other):
         return self.number == other.number
 
 obj1 = A(5)
