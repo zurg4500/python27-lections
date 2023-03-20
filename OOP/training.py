@@ -53,6 +53,8 @@
 #print(taxi2.get_total_cost(6))
 #print(taxi3.get_total_cost(14))
 
+
+
 class Phone:
     
     def __init__(self, name, last_name, phone):
@@ -61,6 +63,7 @@ class Phone:
         self.phone = phone
     
     def get_info(self):
-        return (f'Контакт: {self.name} {self.last_name}, телефон:{self.phone}')
-    
-    
+        print(f"Контакт: {self.name} {self.last_name} телефон: {self.phone}")
+
+contact = Phone('John', 'Snow', 996707707707)
+contact.get_info()
