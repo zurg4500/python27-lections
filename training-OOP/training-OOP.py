@@ -22,28 +22,32 @@
 #print(song.show_year())
 
 # Решение 2 таска
-#class SolarSystem: 
-#    star = 'Sun'
-#    def __init__(self, planet): 
-#        self.planet = planet 
+#class Circle:
+#    color = "Синий"
+#    pi = 3.14
+#    def __init__(self,radius):
+#        self.radius = radius
+#    def get_area(self):
+#        return self.pi*(self.radius**2)
+#circle = Circle(2)
+#circle.color = 'жёлтый'
+#print(circle.color)
+#print(circle.get_area())
 
-#first = SolarSystem('Mercury') 
-#print(first.star) 
-#second = SolarSystem('Venus') 
-#print(second.star) 
+#Решение 3 таска
+#class BankAccount:
+#    balance = 0
+#    def withdraw(self, amount):
+#        self.balance -= amount
+#        print(f'Ваш баланс: {self.balance} сом')
+#    
+#    def deposit(self, amount):
+#        self.balance += amount
+#        print(f'Ваш баланс: {self.balance} сом')
+
+#account = BankAccount()
+#print(account.deposit(1000))
+#print(account.withdraw(500))
 
 
-class Circle:
-    color = "Синий"
-   
-    def __init__(self, radius=int, pi=3.14):
-        self.radius = radius
-        self.pi = pi
-
-    def get_area(self):
-        res = (self.pi * self.radius)*2
-        return res 
-
-circle = Circle(2)
-circle.get_area()
 

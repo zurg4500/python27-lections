@@ -4,7 +4,7 @@ class A:
         print("self", self)
 obj = A()
 obj.instance_method()
-# метод объекта
+# метод объекта 
 # self <__main__.A object at 0x7f22d
 # когда мы вызываем метод у объекта, то нам не нужно передавать его в self, он передается автоматически
 
