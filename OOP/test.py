@@ -1,28 +1,37 @@
-# Решения 8 таска:
-class Password: 
-    
-    def __init__(self, pass_name): 
-        self.pass_name = pass_name 
+#from functools import reduce
 
-    def validate(self):
-        x = self.pass_name
-        for a in x:
-            if x=='#' and x=='@' and x=='&' and x=='$' and x=='%' and x=='!' and x=='~' and x=='*':
-                print('Your password should have some symbols')
-            elif x != str not in x:
-                print('Password should contain letters as well')
-            elif x != int not in x:
-                print('Password should contain numbers too')
-            elif len(a) < 8 and len(a) > 15:
-                print('Password should be longer than 8, and less than 15')
-            else:
-                print('Ваш пароль сохранен.')
 
-    def __repr__(self):
-        return str(self.pass_name)
+
+
+#def get_factorial(y):
+#    return y * y
+
+#print(get_factorial(33))
     
-    def __str__(self):
-        return self.validate(self.pass_name)
+
+#class Math:
+
+#    def __init__(self, number):
+#        self.number = number
+
+def func(x):
+    factorial = 1
+    a = x 
+    while a > 1: 
+        factorial *= a 
+        a -= 1 
+print(func(22))
+   
+
+
+
+
+
+
+
+
+
+
+
     
-obj = Password('112fffgg') 
-print(obj) 
+

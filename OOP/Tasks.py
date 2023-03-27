@@ -55,7 +55,7 @@ winner2 = Nobel("Литература", 1994, "Кэндзабуро Оэ")
 print(winner2.category, winner2.year, winner2.winner) 
 print(winner2.get_year())
 
-# Пример с классом Сатурн:
+# 7 Другой пример с классом Сатурн:
 import datetime 
 class Saturnfilms:
 
@@ -84,6 +84,34 @@ print(winner2.get_year())
 # Вывод\результат:
 # Аватар 2010 Джеймс Кэмерон
 # выиграл 13 лет назад
+ 
+# Решение 8 таска:
+class Password: 
+    
+    def __init__(self, password): 
+        self.password = password 
+        
+    def __str__(self) -> str:
+        return '*' * len(self.password) 
+        
+    def validate(self):
+        if not len(self.password) == 8 and len(self.password) < 15: 
+            return f'Password should be longer than 8, and less than 15' 
+        if not any(map(lambda i: i.isdigit(), self.password)): 
+            return f'Password should contain numbers too' 
+        if not any(map(lambda i: i.isalpha(), self.password)): 
+            return f'Password should contain letters as well' 
+        if not any(map(lambda i: i in ['@', '#', '&', '$', '%', '!', '~', '*'], self.password)): 
+            return f'Your password should have some symbols' 
+        return f'Ваш пароль сохранен.' 
+    
+password = Password('zurg450@') 
+print(password.validate()) 
+print(password)
+
+# Вывод\результат:
+# Ваш пароль сохранен.
+# ********
 
 "==============ООП. множественные наследование и миксины===================="
 
@@ -176,7 +204,6 @@ print(repr(cash))
 # $100,000.46 
 # -$0.30 
 # -0.3 
-
 
 # Решение 6 таска:
 from datetime import datetime 

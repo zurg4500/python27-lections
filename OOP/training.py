@@ -268,3 +268,7 @@ obj = Product('A218', 2009, 'red')
 obj.change_price(3) 
 print(obj.has_garantiya(2010)) 
 print(obj.base_price)   
+
+
+
+
