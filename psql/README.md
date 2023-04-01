@@ -310,15 +310,15 @@ GROUP BY (blogger.id);
 --  blogger 3 |     1
 --  blogger 1 |     3
 ```
-## Import/Export баз данных
+# Import/Export баз данных
 
-> write from file to db
+## write from file to db
 ```sql
 psql db_name < file.sql
 # при этом db_name должна существовать
 ```
 
-> write from db to file
+## write from db to file
 ```sql
 pg_dump db_name > file.sql
 ```
