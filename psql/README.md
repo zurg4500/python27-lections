@@ -311,10 +311,14 @@ GROUP BY (blogger.id);
 --  blogger 1 |     3
 ```
 ## Import/Export баз данных
+
+> write from file to db
 ```sql
-write from file to db
-    psql db_name < file.sql
-    # при этом db_name должна существовать
-write from db to file
-    pg_dump db_name > file.sql
+psql db_name < file.sql
+# при этом db_name должна существовать
+```
+
+> write from db to file
+```sql
+pg_dump db_name > file.sql
 ```
